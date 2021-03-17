@@ -33,6 +33,7 @@ namespace DDACAssignment.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
+
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }

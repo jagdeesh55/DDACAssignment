@@ -64,9 +64,9 @@ namespace DDACAssignment.Areas.Identity.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
 
-            [Required]
+/*            [Required]*//*
             [Display(Name = "Select Role of Registration")]
-            public string Role { get; set; }
+            public bool Role { get; set; }*/
 
         }
 
