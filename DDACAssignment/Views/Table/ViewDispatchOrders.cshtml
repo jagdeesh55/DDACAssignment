@@ -1,0 +1,19 @@
+﻿
+<h1>Update Dispatching Status</h1>
+@{
+    <table border="1">
+        <tr>
+            <th>Order ID</th>
+            <th>Dispatch ID</th>
+            <th>Status</th>
+            <th>Update Status</th>
+        </tr>
+        <tr>
+            @{ var displayresult = Model.Result as DDACAssignment.Models.DispatchingEntity;}
+            <td> @displayresult.PartitionKey</td>
+            <td> @displayresult.RowKey</td>
+            <td> @displayresult.Status</td>
+            <td> <button type="submit" class="btn btn-secondary">Update Completed</button></td>
+        </tr>
+    </table>
+}

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Create Dispatching Table";
+}
+<div style="margin-left: auto; margin-right: auto; text-align: center;">
+    <h1> Create Dispatcher Table</h1>
+
+    <br />
+    <a asp-action="Create" asp-controller="Table">
+        <button type="submit" class="btn btn-secondary">Create Table</button>
+    </a>
+    <br />
+    <br />
+    @if (ViewBag.TableName != null)
+    {
+        <p>
+            The @ViewBag.TableName
+            @(ViewBag.Success == true? " created ":" already exist")
+        </p>
+    }
+</div>
