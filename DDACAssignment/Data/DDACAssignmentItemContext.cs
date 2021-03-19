@@ -15,5 +15,7 @@ namespace DDACAssignment.Data
         }
 
         public DbSet<DDACAssignment.Models.Item> Item { get; set; }
+
+        public DbSet<DDACAssignment.Models.Order> Order { get; set; }
     }
 }

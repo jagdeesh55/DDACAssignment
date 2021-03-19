@@ -4,14 +4,16 @@ using DDACAssignment.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DDACAssignment.Migrations
 {
     [DbContext(typeof(DDACAssignmentContext))]
-    partial class DDACAssignmentContextModelSnapshot : ModelSnapshot
+    [Migration("20210318200012_userselectroledata")]
+    partial class userselectroledata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

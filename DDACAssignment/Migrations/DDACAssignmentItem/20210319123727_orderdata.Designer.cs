@@ -4,14 +4,16 @@ using DDACAssignment.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DDACAssignment.Migrations.DDACAssignmentItem
 {
     [DbContext(typeof(DDACAssignmentItemContext))]
-    partial class DDACAssignmentItemContextModelSnapshot : ModelSnapshot
+    [Migration("20210319123727_orderdata")]
+    partial class orderdata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

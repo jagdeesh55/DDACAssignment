@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using DDACAssignment.Models;
 
 
 
@@ -64,9 +65,12 @@ namespace DDACAssignment.Areas.Identity.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
 
-/*            [Required]*//*
-            [Display(Name = "Select Role of Registration")]
-            public bool Role { get; set; }*/
+            [Required]
+
+            [DataType(DataType.Text)]
+            [Display(Name = "Role (Admin, Staff, Dispatcher):")]
+            
+            public string RoleSelect { get; set; }
 
         }
 

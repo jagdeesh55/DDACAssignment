@@ -7,6 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210318183322_userselectroledata.cs" />
+    <Compile Remove="Migrations\20210318183322_userselectroledata.Designer.cs" />
+    <Compile Remove="Migrations\20210318191920_userselectroledata.cs" />
+    <Compile Remove="Migrations\20210318191920_userselectroledata.Designer.cs" />
+    <Compile Remove="Migrations\DDACAssignmentItem\20210319122808_orderdata.cs" />
+    <Compile Remove="Migrations\DDACAssignmentItem\20210319122808_orderdata.Designer.cs" />
+    <Compile Remove="Migrations\DDACAssignmentItem\20210319123036_orderdata.cs" />
+    <Compile Remove="Migrations\DDACAssignmentItem\20210319123036_orderdata.Designer.cs" />
+    <Compile Remove="Migrations\DDACAssignmentOrder\20210319112750_orderdate.cs" />
+    <Compile Remove="Migrations\DDACAssignmentOrder\20210319112750_orderdate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.3.0" />
     <PackageReference Include="Azure.Storage.Files.Shares" Version="12.1.0" />
     <PackageReference Include="Azure.Storage.Queues" Version="12.2.0" />
@@ -21,6 +34,10 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Azure" Version="1.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\DDACAssignmentOrder\" />
   </ItemGroup>
 
 </Project>
