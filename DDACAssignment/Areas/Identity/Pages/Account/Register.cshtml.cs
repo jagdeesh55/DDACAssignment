@@ -66,10 +66,8 @@ namespace DDACAssignment.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
 
             [Required]
-
             [DataType(DataType.Text)]
             [Display(Name = "Role (Admin, Staff, Dispatcher):")]
-            
             public string RoleSelect { get; set; }
 
         }
