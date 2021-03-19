@@ -28,13 +28,11 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Input.Role"></label>
-                <p>@Html.RadioButton("Admin", false) Admin </p>
-                <p>@Html.RadioButton("Staff", false) Staff </p>
-                <p>@Html.RadioButton("Dispatcher", false) Dispatcher </p>
-                @*<input asp-for="Input.ConfirmPassword" class="form-control" />*@
-                @*<span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>*@
+                <label asp-for="Input.RoleSelect"></label>
+                <input asp-for="Input.RoleSelect" class="form-control" />
+                <span asp-validation-for="Input.RoleSelect" class="text-danger"></span>
             </div>
+            
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>

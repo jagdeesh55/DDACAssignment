@@ -1,29 +1,16 @@
 {
   "dependencies": {
-    "secrets1": {
-      "type": "secrets.user"
-    },
-    "storage1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/ddactablestorage",
-      "type": "storage.azure",
-      "connectionId": "ddactablestorage",
-      "secretStore": "LocalSecretsFile"
-    },
     "mssql1": {
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ddacassignmentdbservertp046012/databases/DDACAssignment_db",
       "type": "mssql.azure",
       "connectionId": "DDACAssignmentItemContext",
-      "secretStore": "LocalSecretsFile"
+      "secretStore": "AzureAppSettings"
     },
     "mssql2": {
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ddacassignmentdbservertp046012/databases/DDACAssignment_db",
       "type": "mssql.azure",
       "connectionId": "DDACAssignmentContextConnection",
-      "secretStore": "LocalSecretsFile"
-    },
-    "mssql3": {
-      "type": "mssql.local",
-      "connectionId": "DDACAssignmentOrderContext"
+      "secretStore": "AzureAppSettings"
     }
   }
 }

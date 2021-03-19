@@ -9,5 +9,6 @@ namespace DDACAssignment.Areas.Identity.Data
     // Add profile data for application users by adding properties to the DDACAssignmentUser class
     public class DDACAssignmentUser : IdentityUser
     {
+        public string Role { get; set; }
     }
 }

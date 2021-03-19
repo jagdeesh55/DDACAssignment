@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using DDACAssignment.Models;
 
 
 
@@ -65,8 +66,11 @@ namespace DDACAssignment.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
 
             [Required]
-            [Display(Name = "Select Role of Registration")]
-            public string Role { get; set; }
+
+            [DataType(DataType.Text)]
+            [Display(Name = "Role (Admin, Staff, Dispatcher):")]
+            
+            public string RoleSelect { get; set; }
 
         }
 

@@ -1,15 +1,23 @@
 {
   "dependencies": {
-    "mssql1": {
-      "type": "mssql",
-      "connectionId": "DDACAssignmentContextConnection"
-    },
     "secrets1": {
       "type": "secrets"
     },
     "storage1": {
       "type": "storage",
       "connectionId": "ddactablestorage"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "DDACAssignmentItemContext"
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "DDACAssignmentContextConnection"
+    },
+    "mssql3": {
+      "type": "mssql",
+      "connectionId": "DDACAssignmentOrderContext"
     }
   }
 }

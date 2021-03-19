@@ -1,0 +1,44 @@
+﻿@model IEnumerable<DDACAssignment.Models.Item>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Order ID
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@{var i = 1;} 
+
+@foreach (var item in Model)
+{
+        <tr>
+            <td>
+                @i
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.ItemName">Delete</a>
+            </td>
+            @{i++;
+            }
+        </tr>
+}
+    </tbody>
+</table>
