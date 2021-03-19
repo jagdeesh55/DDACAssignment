@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Ready Orders";
+}
+
+<div style="margin-left: auto; margin-right: auto; text-align: center;">
+    <h1> All Ready Orders</h1>
+
+    <br />
+    <a asp-action="SelectOrder" asp-controller="Table">
+        <button type="submit" class="btn btn-secondary">Select</button>
+    </a>
+    <br />
+    <br />
+    <p>
+        @if(ViewBag.insert != null)
+            {
+                @ViewBag.insert;
+            }
+    </p>
+</div>

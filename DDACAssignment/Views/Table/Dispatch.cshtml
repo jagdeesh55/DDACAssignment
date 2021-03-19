@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Dispatch";
+}
+
+<center>
+    <h2>Dispatch Orders</h2>
+    <form asp-controller="Table" asp-action="AddDispatching" asp-route-dispatchingid="@ViewBag.Dispatchid" asp-route-orderid="@ViewBag.Orderid">
+        <p>
+            Order ID : @ViewBag.Orderid
+        </p>
+        <p>
+            Dispatch ID : @ViewBag.Dispatchid
+        </p>
+        <button type="submit" class="btn btn-secondary">Dispatch</button>
+        @*        <a asp-action="AddDispatching" asp-controller="Table" asp-route-dispatchingid="@ViewBag.Dispatchid" asp-route-orderid="@ViewBag.Orderid" asp-route-status ="status">
+
+        </a>*@
+    </form>
+</center>
+
